@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1611068241 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\heap\heap\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pq.h"
+
+1611065613 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\heap\heap\pq.h
+
+1611065615 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\heap\heap\pq.c
+	<stdio.h>
+	"pq.h"
+

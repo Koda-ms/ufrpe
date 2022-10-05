@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1613487358 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ht.h"
+	"vutil.h"
+
+1613483555 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\ll.c
+	"ll.h"
+	<stdlib.h>
+
+1613483039 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\ll.h
+
+1613487515 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\ht.c
+	"ht.h"
+	<stdlib.h>
+	<stdio.h>
+
+1613486916 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\ht.h
+	"ll.h"
+
+1607485109 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\exception.c
+	<stdio.h>
+	<stdarg.h>
+	"genlib.h"
+	"gcalloc.h"
+	"exception.h"
+
+1607479752 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\genlib.h
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+
+1607485121 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\gcalloc.h
+
+1607485116 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\exception.h
+	<setjmp.h>
+	<string.h>
+	"genlib.h"
+
+1607485126 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\genlib.c
+	<stdio.h>
+	<stddef.h>
+	<string.h>
+	<stdarg.h>
+	"genlib.h"
+	"gcalloc.h"
+	"exception.h"
+
+1607485132 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\random.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"genlib.h"
+	"random.h"
+
+1607476487 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\random.h
+	"genlib.h"
+	<stdlib.h>
+
+1607485140 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\simpio.c
+	<stdio.h>
+	<string.h>
+	"genlib.h"
+	"strlib.h"
+	"simpio.h"
+
+1607481786 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\strlib.h
+	"genlib.h"
+
+1607476472 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\simpio.h
+	"genlib.h"
+
+1607485153 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\strlib.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"genlib.h"
+	"strlib.h"
+
+1610388904 source:c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\vutil.c
+	"random.h"
+	"vutil.h"
+
+1610388879 c:\users\lenovo\onedrive - ufrpe.br\ufrpe\ensino\aed-comum\programas\ht\vutil.h
+

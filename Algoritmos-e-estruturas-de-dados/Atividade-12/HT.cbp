@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="HT" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/HT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/HT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="exception.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="exception.h" />
+		<Unit filename="gcalloc.h" />
+		<Unit filename="genlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="genlib.h" />
+		<Unit filename="ht.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ht.h" />
+		<Unit filename="ll.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ll.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="random.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="random.h" />
+		<Unit filename="simpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="simpio.h" />
+		<Unit filename="strlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strlib.h" />
+		<Unit filename="vutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vutil.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
