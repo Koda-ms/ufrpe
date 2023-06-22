@@ -1,4 +1,6 @@
-letra a - 1º caminho:
+/* O símbolo lambda foi substituído pelo $ por motivo de facilidade ao digitar */
+
+LETRA A - 1º caminho:
 ($a . $b.a) ( $a. a.ba) b (($a.aaa) ($a.aa)) --> alpha
 ($s . $z.s) ( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
 $z.( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
@@ -7,7 +9,7 @@ $z.( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
 (($h.hh)($h.hh)($h.hh)).b(($o.ooo) ($h.hh))  --> beta
 --> A expressão entra em loop, ou seja, não há forma normal.
 
-letra b - 1º caminho
+LETRA B - 1º caminho
 ($a . $b.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
 ($a . $g.g) (( $f. $p.pf) b) (($d.dbd) ($c.cc)) --> beta
 ($g.g) (($d.dbd) ($c.cc)) --> beta
@@ -24,7 +26,7 @@ letra b - 1º caminho
 ($g.((bb)($c.cc))) --> beta
 (bb)($c.cc) --> beta
 
-letra c - 1º caminho:
+LETRA C - 1º caminho:
 ($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
 ($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
 ($y.b) (($c.cbc) ($f.ff)) --> beta
@@ -41,7 +43,7 @@ b --> beta
 ($y.b)b --> beta
 b --> beta
 
-letra d - 1º caminho:
+LETRA D - 1º caminho:
 ($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
 ($a . $g.b) (( $e. $c.ce) b) (($t.tbt) ($y.yy)) --> beta
 ($g.b) (($t.tbt) ($y.yy)) --> beta
