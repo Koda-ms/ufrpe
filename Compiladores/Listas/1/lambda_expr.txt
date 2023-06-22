@@ -1,0 +1,57 @@
+letra a - 1º caminho:
+($a . $b.a) ( $a. a.ba) b (($a.aaa) ($a.aa)) --> alpha
+($s . $z.s) ( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
+$z.( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
+($l. l.bl) (($o.ooo) ($h.hh)) --> beta
+(($o.ooo) ($h.hh)).b(($o.ooo) ($h.hh))  --> beta
+(($h.hh)($h.hh)($h.hh)).b(($o.ooo) ($h.hh))  --> beta
+--> A expressão entra em loop, ou seja, não há forma normal.
+
+letra b - 1º caminho
+($a . $b.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
+($a . $g.g) (( $f. $p.pf) b) (($d.dbd) ($c.cc)) --> beta
+($g.g) (($d.dbd) ($c.cc)) --> beta
+($g.(($d.dbd) ($c.cc))) --> beta
+(($d.dbd) ($c.cc)) --> beta
+(($d.($c.cc)b($c.cc))) --> beta
+(($c.cc)b($c.cc)) --> beta
+(bb)($c.cc) --> beta
+
+2º caminho a partir da linha 13:
+($g.g) (($d.dbd) ($c.cc)) --> beta
+($g.g) (($c.cc)b($c.cc)) --> beta
+($g.g) ((bb)($c.cc)) --> beta
+($g.((bb)($c.cc))) --> beta
+(bb)($c.cc) --> beta
+
+letra c - 1º caminho:
+($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
+($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
+($y.b) (($c.cbc) ($f.ff)) --> beta
+b --> beta
+
+2º caminho:
+($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
+($a . $y.b) ($o.ob) (($c.cbc) ($f.ff)) --> beta
+($a . $y.b) ($o.(($c.cbc) ($f.ff))b) --> beta
+($a . $y.b) (($c.cbc) ($f.ff))b --> beta
+($a . $y.b) (($c.($f.ff)b($f.ff)))b --> beta
+($a . $y.b) (($f.ff)p($f.ff))b --> beta
+($a . $y.b) ((pp)($f.ff))b --> beta
+($y.b)b --> beta
+b --> beta
+
+letra d - 1º caminho:
+($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
+($a . $g.b) (( $e. $c.ce) b) (($t.tbt) ($y.yy)) --> beta
+($g.b) (($t.tbt) ($y.yy)) --> beta
+b --> beta
+
+2º caminho:
+($a . $g.b) (( $e. $c.ce) b) (($t.tbt) ($y.yy)) --> beta
+($a . $g.b) ($c.cb) (($t.tbt) ($y.yy)) --> beta
+($a . $g.b) (($t.tbt) ($y.yy))b --> beta
+($a . $g.b) (($y.yy)b($y.yy))b --> beta
+($g.b) ($y.yy)b --> beta
+($g.b) (bb) --> beta
+b --> beta
