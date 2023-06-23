@@ -18,6 +18,7 @@ LETRA B - 1º caminho
 (($d.($c.cc)b($c.cc))) --> beta
 (($c.cc)b($c.cc)) --> beta
 (bb)($c.cc) --> beta
+--> Forma normal da expressão acima
 
 2º caminho a partir da linha 13:
 ($g.g) (($d.dbd) ($c.cc)) --> beta
@@ -25,12 +26,14 @@ LETRA B - 1º caminho
 ($g.g) ((bb)($c.cc)) --> beta
 ($g.((bb)($c.cc))) --> beta
 (bb)($c.cc) --> beta
+--> Forma normal da expressão acima
 
 LETRA C - 1º caminho:
 ($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
 ($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
 ($y.b) (($c.cbc) ($f.ff)) --> beta
 b --> beta
+--> Forma normal da expressão acima
 
 2º caminho:
 ($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
@@ -42,18 +45,21 @@ b --> beta
 ($a . $y.b) ((pp)($f.ff))b --> beta
 ($y.b)b --> beta
 b --> beta
+--> Forma normal da expressão acima
 
 LETRA D - 1º caminho:
-($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
-($a . $g.b) (( $e. $c.ce) b) (($t.tbt) ($y.yy)) --> beta
-($g.b) (($t.tbt) ($y.yy)) --> beta
-b --> beta
+($a . $b.b) ( $b. ($a.ab) b) (($a.aba) ($a.aa)) --> alpha
+($a . $g.g) ( $e. ($c.ce) b) (($t.tbt) ($y.yy)) --> beta
+($g.g)  (($t.tbt) ($y.yy)) --> beta
+($g.(($t.tbt) ($y.yy))) --> beta
+(($t.tbt) ($y.yy)) --> beta
+(($y.yy)b($y.yy)) --> beta
+(bb)($y.yy) --> beta
+--> Forma normal da expressão acima
 
-2º caminho:
-($a . $g.b) (( $e. $c.ce) b) (($t.tbt) ($y.yy)) --> beta
-($a . $g.b) ($c.cb) (($t.tbt) ($y.yy)) --> beta
-($a . $g.b) (($t.tbt) ($y.yy))b --> beta
-($a . $g.b) (($y.yy)b($y.yy))b --> beta
-($g.b) ($y.yy)b --> beta
-($g.b) (bb) --> beta
-b --> beta
+2º caminho - a partir da linha 53:
+($g.g)  (($t.tbt) ($y.yy)) --> beta
+($g.g)  (($y.yy)b($y.yy)) --> beta
+($g.g)  (bb)($y.yy) --> beta
+(bb) ($y.yy) --> beta
+--> Forma normal da expressão acima
