@@ -1,65 +1,63 @@
-/* O símbolo lambda foi substituído pelo $ por motivo de facilidade ao digitar */
-
 LETRA A - 1º caminho:
-($a . $b.a) ( $a. a.ba) b (($a.aaa) ($a.aa)) --> alpha
-($s . $z.s) ( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
-$z.( $l. l.bl) b (($o.ooo) ($h.hh)) --> beta
-($l. l.bl) (($o.ooo) ($h.hh)) --> beta
-(($o.ooo) ($h.hh)).b(($o.ooo) ($h.hh))  --> beta
-(($h.hh)($h.hh)($h.hh)).b(($o.ooo) ($h.hh))  --> beta
+(λa . λb.a) ( λa. a.ba) b ((λa.aaa) (λa.aa)) --> alpha
+(λs . λz.s) ( λl. l.bl) b ((λo.ooo) (λh.hh)) --> beta
+λz.( λl. l.bl) b ((λo.ooo) (λh.hh)) --> beta
+(λl. l.bl) ((λo.ooo) (λh.hh)) --> beta
+((λo.ooo) (λh.hh)).b((λo.ooo) (λh.hh))  --> beta
+((λh.hh)(λh.hh)(λh.hh)).b((λo.ooo) (λh.hh))  --> beta
 --> A expressão entra em loop, ou seja, não há forma normal.
 
 LETRA B - 1º caminho
-($a . $b.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
-($a . $g.g) (( $f. $p.pf) b) (($d.dbd) ($c.cc)) --> beta
-($g.g) (($d.dbd) ($c.cc)) --> beta
-($g.(($d.dbd) ($c.cc))) --> beta
-(($d.dbd) ($c.cc)) --> beta
-(($d.($c.cc)b($c.cc))) --> beta
-(($c.cc)b($c.cc)) --> beta
-(bb)($c.cc) --> beta
+(λa . λb.b) (( λb. λa.ab) b) ((λa.aba) (λa.aa)) --> alpha
+(λa . λg.g) (( λf. λp.pf) b) ((λd.dbd) (λc.cc)) --> beta
+(λg.g) ((λd.dbd) (λc.cc)) --> beta
+(λg.((λd.dbd) (λc.cc))) --> beta
+((λd.dbd) (λc.cc)) --> beta
+((λd.(λc.cc)b(λc.cc))) --> beta
+((λc.cc)b(λc.cc)) --> beta
+(bb)(λc.cc) --> beta
 --> Forma normal da expressão acima
 
 2º caminho a partir da linha 13:
-($g.g) (($d.dbd) ($c.cc)) --> beta
-($g.g) (($c.cc)b($c.cc)) --> beta
-($g.g) ((bb)($c.cc)) --> beta
-($g.((bb)($c.cc))) --> beta
-(bb)($c.cc) --> beta
+(λg.g) ((λd.dbd) (λc.cc)) --> beta
+(λg.g) ((λc.cc)b(λc.cc)) --> beta
+(λg.g) ((bb)(λc.cc)) --> beta
+(λg.((bb)(λc.cc))) --> beta
+(bb)(λc.cc) --> beta
 --> Forma normal da expressão acima
 
 LETRA C - 1º caminho:
-($a . $a.b) (( $b. $a.ab) b) (($a.aba) ($a.aa)) --> alpha
-($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
-($y.b) (($c.cbc) ($f.ff)) --> beta
+(λa . λa.b) (( λb. λa.ab) b) ((λa.aba) (λa.aa)) --> alpha
+(λa . λy.b) (( λg. λo.og) b) ((λc.cbc) (λf.ff)) --> beta
+(λy.b) ((λc.cbc) (λf.ff)) --> beta
 b --> beta
 --> Forma normal da expressão acima
 
 2º caminho:
-($a . $y.b) (( $g. $o.og) b) (($c.cbc) ($f.ff)) --> beta
-($a . $y.b) ($o.ob) (($c.cbc) ($f.ff)) --> beta
-($a . $y.b) ($o.(($c.cbc) ($f.ff))b) --> beta
-($a . $y.b) (($c.cbc) ($f.ff))b --> beta
-($a . $y.b) (($c.($f.ff)b($f.ff)))b --> beta
-($a . $y.b) (($f.ff)p($f.ff))b --> beta
-($a . $y.b) ((pp)($f.ff))b --> beta
-($y.b)b --> beta
+(λa . λy.b) (( λg. λo.og) b) ((λc.cbc) (λf.ff)) --> beta
+(λa . λy.b) (λo.ob) ((λc.cbc) (λf.ff)) --> beta
+(λa . λy.b) (λo.((λc.cbc) (λf.ff))b) --> beta
+(λa . λy.b) ((λc.cbc) (λf.ff))b --> beta
+(λa . λy.b) ((λc.(λf.ff)b(λf.ff)))b --> beta
+(λa . λy.b) ((λf.ff)p(λf.ff))b --> beta
+(λa . λy.b) ((pp)(λf.ff))b --> beta
+(λy.b)b --> beta
 b --> beta
 --> Forma normal da expressão acima
 
 LETRA D - 1º caminho:
-($a . $b.b) ( $b. ($a.ab) b) (($a.aba) ($a.aa)) --> alpha
-($a . $g.g) ( $e. ($c.ce) b) (($t.tbt) ($y.yy)) --> beta
-($g.g)  (($t.tbt) ($y.yy)) --> beta
-($g.(($t.tbt) ($y.yy))) --> beta
-(($t.tbt) ($y.yy)) --> beta
-(($y.yy)b($y.yy)) --> beta
-(bb)($y.yy) --> beta
+(λa . λb.b) ( λb. (λa.ab) b) ((λa.aba) (λa.aa)) --> alpha
+(λa . λg.g) ( λe. (λc.ce) e) ((λt.tbt) (λy.yy)) --> beta
+(λg.g)  ((λt.tbt) (λy.yy)) --> beta
+(λg.((λt.tbt) (λy.yy))) --> beta
+((λt.tbt) (λy.yy)) --> beta
+((λy.yy)b(λy.yy)) --> beta
+(bb)(λy.yy) --> beta
 --> Forma normal da expressão acima
 
 2º caminho - a partir da linha 53:
-($g.g)  (($t.tbt) ($y.yy)) --> beta
-($g.g)  (($y.yy)b($y.yy)) --> beta
-($g.g)  (bb)($y.yy) --> beta
-(bb) ($y.yy) --> beta
+(λg.g)  ((λt.tbt) (λy.yy)) --> beta
+(λg.g)  ((λy.yy)b(λy.yy)) --> beta
+(λg.g)  (bb)(λy.yy) --> beta
+(bb) (λy.yy) --> beta
 --> Forma normal da expressão acima
