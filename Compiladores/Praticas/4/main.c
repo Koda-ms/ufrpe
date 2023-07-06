@@ -528,12 +528,16 @@ int main() {
                 break;
             case 'C':
                 reduzC(array1,array2);
+                break;
             case 'D':
                 reduzD(array1,array2);
+                break;
             case 'E':
                 reduzE(array1,array2);
+                break;
             case 'F':
                 reduzF(array1,array2);
+                break;
             case 'Y':
                 reduzY(array1,array2);
                 break;
