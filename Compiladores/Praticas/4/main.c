@@ -268,7 +268,7 @@ void reduzD(char* array1, char* array2) {
     nB = n - 1;
     C = n;
     acha_argumento(array1,&n);
-    nC = n-1;
+    nC = n - 1;
     D = n;
     acha_argumento(array1,&n);
     nD = n - 1;
@@ -340,7 +340,7 @@ void reduzE(char* array1, char* array2) {
     nB = n - 1;
     C = n;
     acha_argumento(array1,&n);
-    nC = n-1;
+    nC = n - 1;
     D = n;
     acha_argumento(array1,&n);
     nD = n - 1;
@@ -401,7 +401,7 @@ void reduzF(char* array1, char* array2) {
     nB = n - 1;
     C = n;
     acha_argumento(array1,&n);
-    nC = n-1;
+    nC = n - 1;
     D = n;
     acha_argumento(array1,&n);
     nD = n - 1;
