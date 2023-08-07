@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <time.h>
 
 #define N 100000000
@@ -132,28 +132,28 @@ void reduz_K(int* array1, int* array2) {
  * Sabc = ac(bc)
  */
 void reduz_S(int *array1, int *array2) {
-    int A, nA;
-    int B, nB;
-    int C, nC;
+    int rA, nA;
+    int rB, nB;
+    int rC, nC;
     int n = 1;
-    A = n;
+    rA = n;
     acha_argumento(array1,&n);
     nA = n-1;
-    B = n;
+    rB = n;
     acha_argumento(array1,&n);
     nB = n-1;
-    C = n;
+    rC = n;
     acha_argumento(array1,&n);
     nC = n-1;
 
     int k = 0;
     int i;
 
-    for (i = A; i <= nA; i++) {
+    for (i = rA; i <= nA; i++) {
         array2[k] = array1[i];
         k++;
     }
-    for (i = C; i <= nC; i++) {
+    for (i = rC; i <= nC; i++) {
         array2[k] = array1[i];
         k++;
     }
@@ -161,11 +161,11 @@ void reduz_S(int *array1, int *array2) {
     array2[k] = AP;
     k++;
 
-    for (i = B; i <= nB; i++) {
+    for (i = rB; i <= nB; i++) {
         array2[k] = array1[i];
         k++;
     }
-    for (i = C; i <= nC; i++) {
+    for (i = rC; i <= nC; i++) {
         array2[k] = array1[i];
         k++;
     }
